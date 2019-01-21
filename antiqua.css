@@ -1,0 +1,548 @@
+body
+{
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+	background-color: #777777;
+}
+
+body, body a
+{
+	font-size: 15px;
+	font-family: Arial;
+	color: #DADADA;
+}
+
+table, table td
+{
+	font-size: 15px;
+	font-family: Arial;
+	vertical-align: top;
+}
+
+input[type=checkbox]
+{
+	margin: 2px;
+}
+
+.tableFrame
+{
+	width: 90%;
+	min-width: 1000px;
+}
+
+.tableCat
+{
+	width: 100%;
+}
+
+.tableFrame, .tableFrame tr, .tableFrame td, .tableCat, .tableCat tr, .tableCat td, .tableCommon, .tableCommon tr, .tableCommon td
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 0;
+	border: 0;
+}
+
+.tableCommon td
+{
+	vertical-align: top;
+}
+
+.tableLogin
+{
+	width: 200px;
+	border: 0;
+}
+
+.tableLogin tr, .tableLogin td
+{
+	border-collapse: collapse;
+	border: 0;
+}
+
+.tableLogin td
+{
+	width: 100%;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.tableFrame .tdLogo
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 110px;
+	width: 100%;
+	position: relative;
+	background-color: #540000;
+}
+
+.tableProperties
+{
+	width: 100%;
+	min-width: 336px;
+}
+
+.tableProperties, .tableProperties tr
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 0;
+	border: 0;
+}
+
+.tableProperties .tdPropLabel
+{
+	color: #E4D49B;
+	background-color: #4A0000;
+	width: 102px;
+	max-width: 102px;
+	vertical-align: middle;
+}
+
+.tableProperties td
+{
+	color: #DADADA;
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 2px;
+	border: 1px solid #CC9B50;
+	vertical-align: top;
+	word-wrap: break-word;
+}
+
+.tableProduct
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 0;
+	border: 0;
+}
+
+.divDesc
+{
+	padding: 2px;
+	word-wrap: break-word;
+}
+
+.divProps
+{
+	display: inline-block;
+}
+
+.divLogo
+{
+	display: inline-block;
+	position: absolute;
+	font-weight:bold;
+	color: #DADADA;
+	font-size: 76px;
+	bottom: 0px;
+	left: 10px;
+}
+
+.divAdmin
+{
+	display: inline-block;
+	position: absolute;
+	text-align: right;
+	right: 6px;
+	top: 2px;
+	font-size: 11px;
+}
+
+.divInfo
+{
+	display: inline-block;
+	position: absolute;
+	text-align: right;
+	right: 6px;
+	bottom: 4px;
+	font-size: 15px;
+}
+
+.divAdmin a
+{
+	font-size: 11px;
+}
+
+.tableFrame .tdMenu
+{
+	height: 25px;
+	width: 100%;
+	background-color: #2F0D04;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	text-align: right;
+	position: relative;
+}
+
+.tableFrame .tdFooter
+{
+	height: 25px;
+	width: 100%;
+	background-color: #480404;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.tdTree
+{
+	background-color: #1B1917;
+	width: 250px;
+	min-width: 200px;
+	max-width: 300px;
+	position: relative;
+}
+
+a:hover, .selected a:hover, .bold a:hover
+{
+	color: LightYellow;
+}
+
+.tdTree a
+{
+	text-decoration: none;
+}
+
+.tdItem
+{
+	background-color: #170201;
+	vertical-align: top;
+	position: relative;
+}
+
+.bold, .bold a
+{
+	/* font-weight: bold; */
+	color: #FFCD70;
+}
+
+.selected, .selected a
+{
+	/* color: #FFCD70; */
+}
+
+.current.bold
+{
+	/* color: #FFCD70; */
+	border: 0px solid #FFCD70;
+	margin: 0px;
+}
+
+.current
+{
+	/* color: #FFCD70; */
+	border: 0px solid Gray;
+	margin: 0px;
+}
+
+.branchSel
+{
+}
+	
+.divTreeItem
+{
+	padding-left: 15px;
+	padding-top: 3px;
+	padding-bottom: 1px;
+	position: relative;
+}
+
+.divTreeItem2
+{
+	padding-left: 15px;
+	padding-top: 5px;
+	margin-bottom: 20px;
+}
+
+.divTreeItem2 .chapter, .divTreeItem2 .category
+{
+	color: Silver;
+}
+
+.divTreeItem2 .chapter:hover, .divTreeItem2 .category:hover
+{
+	color: LightYellow;
+	text-decoration: underline;
+}
+
+.category, .chapter
+{
+	padding-right: 4px;
+}
+
+.checkBoxGrayed
+{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.divProduct
+{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border: 8px solid #636363;
+}
+
+.divProduct:hover, .product:hover .divProduct
+{
+	border: 8px solid Silver;
+}
+
+.divProductText
+{
+	display: table-caption;
+	width: 200px;
+	padding: 0 8px;
+	overflow: hidden;
+}
+
+.imgProduct
+{
+	width: 200px;
+	height: 200px;
+}
+
+.product
+{
+	display: inline-block;
+	text-align: center;
+	word-wrap: break-word;
+	color: Silver;
+	text-decoration: none;
+	position: relative;
+}
+
+.chapter, .root, .chapter a, .root a
+{
+	font-size: 17px;
+}
+
+.divImage
+{
+	display: inline-block;
+	border: 4px solid #FFCD70;
+	margin: 2px;
+}
+
+.divImageEmpty
+{
+	border: 0;
+}
+
+#divThumbs
+{
+	display: inline-block;
+}
+
+.divThumb:hover, .divThumbSel:hover
+{
+	border: 4px solid LightYellow;
+}
+
+.divThumb
+{
+	display: inline-block;
+	border: 4px solid #BABABA;
+	margin: 2px;
+	cursor: pointer;
+	opacity: 0.9;
+	position: relative;
+}
+
+.divThumbSel
+{
+	display: inline-block;
+	border: 4px solid #FFCD70;
+	margin: 2px;
+	position: relative;
+}
+
+.imgThumb
+{
+	cursor: pointer;
+}
+
+#image
+{
+	cursor: zoom-in;
+}
+
+.divDelLink:hover, .divOverLink:hover
+{
+	color: White;
+}
+
+.divDelLink
+{
+	display: inline-block;
+	position: absolute;
+	opacity: 0.3;
+	right: 0;
+	top: 0;
+	padding: 0 3px;
+	background-color: Black;
+	color: Silver;
+	text-decoration: none;
+	z-index: 1;
+}
+
+.divOverLink
+{
+	display: block;
+	position: absolute;
+	opacity: 0.2;
+	left: 0;
+	bottom: 0;
+	padding: 0 2px;
+	background-color: Black;
+	color: Silver;
+	z-index: 1;
+}
+
+#divWait
+{
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: wait;
+	background-color: Black;
+	opacity: 0.5;
+}
+
+a:hover, .linkMore:hover
+{
+	text-decoration: underline;
+	color: LightYellow;
+}
+
+.linkMore
+{
+	font-size: 13px;
+	text-decoration: none;
+	color: #EFCD8D;
+}
+
+.treeLine
+{
+	position: absolute;
+	bottom: 0;
+	left: 5;
+	border-left: 1px solid #383838;
+	border-bottom: 1px solid #383838;
+	z-index: 0;
+}
+
+.treeLineSel
+{
+	position: absolute;
+	bottom: 0;
+	left: 5;
+	border-left: 1px dashed #DADADA;
+	border-bottom: 1px dotted #DADADA;
+	z-index: 1;
+}
+
+.treeLineBold
+{
+	position: absolute;
+	bottom: 0;
+	left: 5;
+	border-left: 1px solid #FFCD70;
+	border-bottom: 1px solid #FFCD70;
+	z-index: 2;
+}
+
+#linkBack, #linkBackNot3D
+{
+	text-decoration: none;
+	color: #0CC700;
+}
+
+#linkBack:hover, #linkBackNot3D:hover
+{
+	text-decoration: underline;
+	color: LightYellow;
+}
+
+.modeWalkArrows
+{
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	opacity: 0.5;
+	width: 50px;
+	height: 50px;
+	z-index: 1;
+}
+
+.modeWalkArrows:hover
+{
+	opacity: 1.0;
+}
+
+#leftArrow
+{
+	left: 0;
+	top: 50px;
+}
+
+#forwardArrow
+{
+	left: 50px;
+	top: 0;
+}
+
+#rightArrow
+{
+	right: 0;
+	top: 50px;
+}
+
+#backwardArrow
+{
+	left: 50px;
+	bottom: 0px;
+}
+
+.door:hover .category, .door:hover .chapter, .door:hover .root
+{
+	color: LightYellow;
+}
+
+.door
+{
+	border-color: #9E9E9E;
+}
+
+.door:hover
+{
+	border-color: Silver;
+}
+
+#help
+{
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	opacity: 0.5;
+	width: 30px;
+	height: 30px;
+	z-index: 1;
+	background-size: 30px 30px;
+}
+
+#help:hover
+{
+	opacity: 1.0;
+}
+
